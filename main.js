@@ -1,8 +1,9 @@
 const { roundup } = require("./cattle.js")
 const { hireDrovers } = require("./drovers.js")
 const { journeyMaker } = require("./journey.js")
+const { cattleToDrive } = require("./database.js")
 
-const cattleToDrive = 50
+
 const drovers = hireDrovers(cattleToDrive)
 const cattle = roundup(cattleToDrive)
 const journey = journeyMaker()
@@ -34,5 +35,5 @@ for (const drover of drovers) {
 
 console.log("\n\nYour journey will take you through the wildness of the American Midwest and across the following terrain")
 for (const area of journey) {
-    console.log(`\t* ${area}`)
+    console.log(`\t *${area}`)
 }

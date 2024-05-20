@@ -270,6 +270,8 @@ const database = {
     }]
 }
 
+const cattleToDrive = 50
 
 
-module.exports = { database }
+
+module.exports = { database, cattleToDrive }
